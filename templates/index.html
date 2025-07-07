@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Packing Fraction Predictor</title>
+</head>
+<body>
+    <h1>Packing Fraction Prediction</h1>
+    <form method="post">
+        <label>Crosslinker Size:</label>
+        <input type="text" name="size" required><br><br>
+
+        <label>Number of Crosslinkers:</label>
+        <input type="text" name="number" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction is not none %}
+        <h2>Predicted Packing Fraction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
